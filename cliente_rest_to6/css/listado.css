@@ -1,0 +1,115 @@
+/* PANEL */
+.panel {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 900px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.panel h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2b2d42;
+}
+
+/* TABLA */
+.tabla-container {
+    overflow-x: auto;
+}
+
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla thead {
+    background: #2b2d42;
+    color: white;
+}
+
+.tabla th,
+.tabla td {
+    padding: 12px;
+    text-align: center;
+}
+
+.tabla tbody tr {
+    border-bottom: 1px solid #eee;
+    transition: 0.2s;
+}
+
+.tabla tbody tr:hover {
+    background: #f8f9fa;
+}
+
+/* MEDALLAS */
+.medalla {
+    width: 40px;
+}
+
+/* ABONADO */
+.abonado {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.iconos img {
+    width: 18px;
+    margin: 0 5px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.iconos img:hover {
+    opacity: 1;
+}
+
+/* BADGES */
+.badge {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    color: white;
+}
+
+.badge.jubilado {
+    background: #6c757d;
+}
+
+.badge.menor {
+    background: #2b9348;
+}
+
+.badge.normal {
+    background: #adb5bd;
+}
+
+/* BOTÓN LOGOUT */
+.btn-logout {
+    display: block;
+    margin: 20px auto 0;
+    text-align: center;
+    padding: 10px;
+    max-width: 200px;
+    background: #d90429;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-logout:hover {
+    background: #a6031f;
+    transform: translateY(-2px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .tabla th, .tabla td {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+}

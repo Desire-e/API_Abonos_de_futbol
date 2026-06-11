@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #d90429, #2b2d42);
+    min-height: 100vh;
+    color: #333;
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    padding: 30px 20px;
+    color: white;
+}
+
+.header img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* CONTENEDOR */
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* FORMULARIO */
+.formulario {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 700px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* CAMPOS */
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.campo input,
+.campo select {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+}
+
+.campo input:focus,
+.campo select:focus {
+    border-color: #d90429;
+    outline: none;
+    box-shadow: 0 0 5px rgba(217,4,41,0.5);
+}
+
+/* TERMINOS */
+.terminos {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* BOTÓN */
+.btn-comprar {
+    width: 100%;
+    padding: 12px;
+    background: #d90429;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-comprar:hover {
+    background: #a6031f;
+    transform: translateY(-2px);
+}
+
+/* LINK ADMIN */
+.admin-link {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #2b2d42;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.admin-link:hover {
+    text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* ERROR */
+.error {
+    color: #d90429;
+    font-size: 0.85rem;
+    margin-top: 5px;
+}
+
+
+/* ACCESO DENEGADO */
+.acceso-denegado {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 20px;
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* ICONO */
+.icono-error {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+/* TITULO */
+.acceso-denegado h2 {
+    color: #d90429;
+    margin-bottom: 10px;
+}
+
+/* TEXTO */
+.acceso-denegado p {
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.subtexto {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 20px;
+}

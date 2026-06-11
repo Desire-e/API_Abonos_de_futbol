@@ -1,0 +1,20 @@
+/* LOGIN ESPECÍFICO */
+.login {
+    max-width: 400px;
+    text-align: center;
+}
+
+.login h2 {
+    margin-bottom: 20px;
+    color: #2b2d42;
+}
+
+/* ERROR */
+.error {
+    background: #ffe5e5;
+    color: #d90429;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}

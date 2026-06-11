@@ -1,0 +1,95 @@
+/* TICKET */
+.ticket {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+/* efecto entrada (línea punteada) */
+.ticket::before,
+.ticket::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: repeating-linear-gradient(
+        to right,
+        #ccc,
+        #ccc 10px,
+        transparent 10px,
+        transparent 20px
+    );
+}
+
+.ticket::before {
+    top: 80px;
+}
+
+.ticket::after {
+    bottom: 80px;
+}
+
+/* título */
+.ticket h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2b2d42;
+}
+
+/* mensaje éxito */
+.success {
+    text-align: center;
+    color: #2b9348;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* info */
+.ticket-info {
+    margin: 20px 0;
+}
+
+.fila {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.fila span {
+    color: #666;
+}
+
+.fila strong {
+    color: #2b2d42;
+}
+
+/* precio */
+.precio {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+/* tarifa especial */
+.tarifa {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #d90429;
+}
+
+/* responsive */
+@media (max-width: 600px) {
+    .ticket {
+        padding: 20px;
+    }
+}
