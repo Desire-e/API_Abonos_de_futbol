@@ -55,29 +55,8 @@ CREATE TABLE `tipo_abonos` (
   `id` varchar(36) NOT NULL,
   `descripcion` varchar(30) NOT NULL,
   `precio` float UNSIGNED NOT NULL
-  -- `codigo` VARCHAR(1) UNIQUE NOT NULL, 
-  -- `icono` MEDIUMBLOB NOT NULL -- puede venir como null
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
--- DESCRIBE tipo_abonos;
--- ALTER TABLE tipo_abonos MODIFY icono MEDIUMBLOB NULL;
 
-/***** NUEVOS CAMPOS (TO7)
-
-codigo: 
-Este campo almacenará la letra que posteriormente usaremos para generar 
-el código de asiento. 
-Tendrás que validar que no existe en la base de datos un tipo de abono 
-con el mismo código (validación mediante AJAX en tiempo real).
-
-icono: Almacenará el icono que posteriormente se mostrará en la tabla 
-del listado de abonos. 
-Este icono deberás almacenarlo directamente en la base de datos en BLOB.
--------------------------------------------------------------------------
-
-BLOB -- hasta 64 KB
-MEDIUMBLOB -- hasta 16 MB
-LONGBLOB -- hasta 4 GB
-*****/
 
 --
 -- Volcado de datos para la tabla `tipo_abonos`
@@ -87,10 +66,6 @@ INSERT INTO `tipo_abonos` (`id`, `descripcion`, `precio`) VALUES
 ('19d6ffff-b352-11f0-918b-0d6e01bba713', 'Tribuna', 500),
 ('19d71aa5-b352-11f0-918b-0d6e01bba713', 'Preferencia', 300),
 ('588b2c10-b352-11f0-918b-0d6e01bba713', 'Fondo', 110);
--- delete from `tipo_abonos`;
--- delete from `abonos`;
--- select * from `tipo_abonos`;
-
 
 --
 -- Índices para tablas volcadas
@@ -125,41 +100,26 @@ COMMIT;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 
 
-/* TO 3. Uso de cookies y session */
--- tabla usuarios
 CREATE TABLE `usuarios` (
   `id` varchar(36) NOT NULL,
   `username` varchar(100) NOT NULL,
   `password` varchar(200) NOT NULL
-  -- `google_id` VARCHAR(21) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 ALTER TABLE `usuarios`
   ADD PRIMARY KEY (`id`);
 
--- usuario administrador: uda 1234
+-- usuario administrador: 
+-- username: uda
+-- password: 1234
 INSERT INTO `usuarios` (`id`, `username`, `password`) VALUES
 ('754d60aa-28f0-4ea2-a365-dc3b4663a787', 'uda', '$2y$10$uwdVl0p6wxeGvUMnJObkGeKG9dFwBMXvwNrY0638fB.W27ciFs7oe');
 
--- otro usuario administrador: antonio40 contrasena
+-- otro usuario administrador: 
+-- username: antonio40 
+-- password: contrasena
 INSERT INTO `usuarios` (`id`, `username`, `password`) VALUES
 ('ae9e071d-8f24-46dc-94cb-6e0fde73793c', 'antonio40', '$2y$10$N03dMgAWzvq9nN8FOvE.4OT2Lts1g/LDuPbxVZW1k7tr9huqDf0cO');
 
-
-
-
-
--- pruebas 
-select * from tipo_abonos;
-select * from abonos;
-select * from usuarios;
-delete from abonos;
-delete from tipo_abonos;
-
-SELECT DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'personal_access_tokens' AND COLUMN_NAME = 'tokenable_id';
-
-SHOW CREATE TABLE personal_access_tokens;
-
-SHOW TABLES;
 
 
