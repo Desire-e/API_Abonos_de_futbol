@@ -1,4 +1,4 @@
-# API_Abonos_de_futbol
+# API REST para Gestión de Abonos de Fútbol
 Tarea práctica del módulo Desarrollo Web Entorno Servidor.
 Se trata de una API REST desarrollada con PHP y Laravel 12 para la gestión y compra de abonos de fútbol. Incluye funcionalidades para usuarios y administradores, así como un cliente PHP sencillo para probar los distintos endpoints.
 
