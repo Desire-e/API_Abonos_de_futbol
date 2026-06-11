@@ -41,8 +41,13 @@ php artisan storage:link
 ## Cómo usarla
 Puede probarla con `/cliente_rest_to6` (cliente desarrollado en PHP que hace uso de los endpoints en una web simple para demostrar el funcionamiento) y ejecutándolo en un servidor web (Apache).
 
+
 Para ejecutarlo, despliegue la carpeta del cliente en un servidor web con soporte para PHP (Apache, Nginx, Laragon, etc.) y acceda a la URL correspondiente según su configuración.
+
 Por ejemplo, si quiere ejecutar este cliente con XAMPP (Apache), mover carpeta la carpeta `/TO6` de la carpeta del repositorio, a la carpeta de su equipo `/xampp/htdocs`.
+**Al mover la carpeta que contiene la API, tenga en cuenta que debe de asegurarse de ejecutar de nuevo el enlace simbólico (si al mover, en /public existe un archivo storage, eliminar antes de ejecutar enlace simbólico)**
+
 Estará disponible el cliente de prueba en: http://localhost/TO6/cliente_rest_to6/abonos/compra_abonos.php
+
 
 Para consultar la documentación completa de la API, incluidos los endpoints y ejemplos de petición y respuesta, revise el archivo `Documentacion API abonos.pdf` incluido en el repositorio.
