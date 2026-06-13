@@ -55,6 +55,9 @@ Por ejemplo, si quiere ejecutar este cliente con XAMPP (Apache), mover carpeta l
 
 Estará disponible el cliente de prueba en: http://localhost/TO6/cliente_rest_to6/abonos/compra_abonos.php
 
+Además, para probar la parte de login para administradores, debe introducir el usuario y contraseña indicados en ```uda_api.sql``` (usuario uda, contraseña 1234).
 
 ## Documentación
 Para consultar la documentación completa de la API, incluidos los endpoints y ejemplos de petición y respuesta, revise el archivo `Documentacion API abonos.pdf` incluido en el repositorio.
+
+
