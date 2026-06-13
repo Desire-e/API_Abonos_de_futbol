@@ -2,14 +2,20 @@
 Tarea práctica del módulo Desarrollo Web Entorno Servidor.
 Se trata de una API REST desarrollada con PHP y Laravel 12 para la gestión y compra de abonos de fútbol. Incluye funcionalidades para usuarios y administradores, así como un cliente PHP sencillo para probar los distintos endpoints.
 
-## Requisitos
+## Demo
+Puede comprobar el funcionamiento simplemente entrando a la [demo desplegada en Railway](https://apiabonosdefutboldemo-production-4d85.up.railway.app/abonos/compra_abonos.php)
+
+
+## Instalación para pruebas en entorno local
+
+### Requisitos
 - PHP 8.2.12 o superior
 - Composer
 - MySQL
 - Laravel 12
 - Apache o servidor compatible
 
-## Instalación
+### Instalación
 1.	Clonar o descargar proyecto
 ```
 git clone https://github.com/Desire-e/API_Abonos_de_futbol.git
@@ -38,7 +44,7 @@ php artisan migrate
 php artisan storage:link
 ```
 
-## Cómo usarla
+### Cómo usarla
 Puede probarla con `/cliente_rest_to6` (cliente desarrollado en PHP que hace uso de los endpoints en una web simple para demostrar el funcionamiento) y ejecutándolo en un servidor web (Apache).
 
 
@@ -50,4 +56,5 @@ Por ejemplo, si quiere ejecutar este cliente con XAMPP (Apache), mover carpeta l
 Estará disponible el cliente de prueba en: http://localhost/TO6/cliente_rest_to6/abonos/compra_abonos.php
 
 
+## Documentación
 Para consultar la documentación completa de la API, incluidos los endpoints y ejemplos de petición y respuesta, revise el archivo `Documentacion API abonos.pdf` incluido en el repositorio.
