@@ -79,5 +79,10 @@ Para probar el login de administrador, usa las credenciales de prueba incluidas 
 Para consultar la documentación completa de la API, incluidos los endpoints y ejemplos de petición y respuesta, revise el archivo `Documentacion API abonos.pdf` incluido en el repositorio.
  
 ## Autor
- 
+
 **Desire-e** — [GitHub](https://github.com/Desire-e)
+
+ 
+## Licencia
+ 
+Este proyecto se comparte con fines educativos y de portfolio.
