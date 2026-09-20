@@ -84,6 +84,3 @@ Para consultar la documentación completa de la API, incluidos los endpoints y e
 ## Autor
 
 **Desire-e** — [GitHub](https://github.com/Desire-e)
-## Licencia
- 
-Este proyecto se comparte con fines educativos y de portfoli
