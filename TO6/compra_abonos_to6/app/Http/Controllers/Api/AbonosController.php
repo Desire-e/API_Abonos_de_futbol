@@ -153,12 +153,12 @@ class AbonosController extends Controller {
                 $datosAbono = [
                     'fecha'=> now(), 
                     'abonado'=> $this->setAbonado($request->nombre, $request->dni), 
-                    'edad'=> $edad = $this->setEdad($request->nacimiento),
+                    'edad'=> $this->setEdad($request->nacimiento),
                     'telefono'=> $request->telefono, 
                     'cuenta_bancaria' => str_replace([' ', '-'], '', $request->cuentaBancaria), // quita espacios/guiones 
                     'tipo'=> $tipo->id,
                     'asiento'=> $codigoAsiento,
-                    'precio'=> $this->setPrecio($edad, $tipo->precio, Abono::all()) 
+                    'precio'=> $this->setPrecio($edad, $tipo->precio) 
                 ];
 
 
