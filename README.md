@@ -1,15 +1,16 @@
-
 # API REST para Gestión de Abonos de Fútbol
  
 API REST desarrollada con **PHP** y **Laravel 12** para la gestión y compra de abonos de fútbol. 
 
 Tarea práctica del módulo *Desarrollo Web en Entorno Servidor*, orientada a demostrar el diseño de endpoints REST, autenticación y consumo desde un cliente externo. Incluye funcionalidades para usuarios y administradores, así como un cliente PHP sencillo para probar los distintos endpoints.
 
+---
 ## Demo
  
 Próximamente. Mientras tanto, puedes probar la instalación en entorno local siguiendo los pasos a continuación.
 
-## Instalación para pruebas en entorno local
+---
+## Instalación en entorno local
  
 ### Requisitos
  
@@ -74,15 +75,15 @@ Para probar el login de administrador, usa las credenciales de prueba incluidas 
 - **Usuario:** `uda`
 - **Contraseña:** `1234`
 
+---
 ## Documentación
 
 Para consultar la documentación completa de la API, incluidos los endpoints y ejemplos de petición y respuesta, revise el archivo `Documentacion API abonos.pdf` incluido en el repositorio.
- 
+
+---
 ## Autor
 
 **Desire-e** — [GitHub](https://github.com/Desire-e)
-
- 
 ## Licencia
  
-Este proyecto se comparte con fines educativos y de portfolio.
+Este proyecto se comparte con fines educativos y de portfoli
